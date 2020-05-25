@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://launcher.dmptr.com/launcher/ServerPackv2.xsl" type="text/xsl" ?>
+<ServerPack version="3.4" xmlns="http://www.mcupdater.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mcupdater.com http://files.mcupdater.com/ServerPackv2.xsd">
+
+	<Server id="playpackex" abstract="false" name="PlayPack EX" newsUrl="https://launcher.dmptr.com/playpack_ex/pack.xml" serverAddress="ex.dmptr.com" version="1.15.2"
+	 generateList="true" autoConnect="false" revision="EX" 
+	 mainClass="cpw.mods.modlauncher.Launcher" launcherType="Vanilla" iconUrl="https://launcher.dmptr.com/launcher/cell.png">
+
+	 	<!-- Metadata -->
+	 	<Meta>
+			<note>Watch this space.</note>
+		</Meta>
+		
+	 	<!-- Core Loaders -->
+		<Loader type="Forge" version="1.15.2-31.2.0" loadOrder="0"/> 
+		<Module name="Minecraft Forge" id="forge-1.15.2-31.2.0" depends="" side="BOTH">
+			<Size>100000</Size>
+			<Required>true</Required>
+			<ModType>Override</ModType>
+		</Module>
+
+		<Import url="https://launcher.dmptr.com/modules/1.15/mapping/module.xml">mapping_1.15</Import>
+		<Import url="https://launcher.dmptr.com/modules/1.15/texturepacks/module.xml">texturepacks_1.15</Import>
+		
+		<!-- Libraries -->
+		<Module name="Abnormals Core" id="abnormalscore" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Abnormals-Core-1.15.2-v1.0.4.jar</URL>
+			<Size>409755</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>755ba2635499907ee2425089603add29</MD5>
+		</Module>
+		<Module name="AutoRegLib" id="autoreglib" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/AutoRegLib-1.5-40.jar</URL>
+			<Size>58933</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>06149a40dc0ced647dd41b11ab01b5cc</MD5>
+			<Meta>
+				<description>A simple library for Vazkii's mods.</description>
+				<version>1.5-40</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/autoreglib</url>
+				<authors>Vazkii</authors>
+			</Meta>
+		</Module>
+		<Module name="Bookshelf" id="bookshelf" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Bookshelf-1.15.2-5.6.38.jar</URL>
+			<Size>172722</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>a13476800f8dcbc857c074f53869430c</MD5>
+			<Meta>
+				<description>An open source library for other mods!</description>
+				<version>5.6.38</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/bookshelf</url>
+				<authors>Darkhax</authors>
+			</Meta>
+		</Module>
+		<Module name="CoFH Core" id="cofhcore" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/cofh_core-1.15.2-0.4.0b.jar</URL>
+			<Size>822898</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>62809c5cb9f29384eb58d9b6e03a1562</MD5>
+			<Meta>
+				<description>Required for all CoFH Mods.</description>
+				<version>0.4.0b</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/cofh-core</url>
+				<authors>Team CoFH</authors>
+			</Meta>
+		</Module>
+		<Module name="Caelus API" id="caelus" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/caelus-FORGE-1.15.2-2.0-beta2.jar</URL>
+			<Size>50181</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>b836190af97d50f770819320c1e0e435</MD5>
+		</Module>
+		<Module name="Curios" id="curios" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/curios-FORGE-1.15.2-2.0.2.2.jar</URL>
+			<Size>183669</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>832266f957588cc1558ba8fb9515b4bb</MD5>
+			<Meta>
+				<description>A flexible and expandable accessory/equipment API for users and developers</description>
+				<url>https://www.curseforge.com/minecraft/mc-mods/curios</url>
+				<authors>TheIllusiveC4</authors>
+			</Meta>
+		</Module>
+		<Module name="MixinBootstrap" id="mixinbootstrap" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/MixinBootstrap-1.0.3.jar</URL>
+			<Size>1061758</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>b62d187f409ba65c5226b0d874a9be41</MD5>
+			<Meta>
+				<description>A temporary way of booting Mixin in a Forge environment.</description>
+				<version>1.0.2</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/mixinbootstrap</url>
+				<authors>LX_Gaming</authors>
+			</Meta>
+		</Module>
+		<Module name="Mantle" id="mantle" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Mantle-1.15.2-1.5.15.jar</URL>
+			<Size>826536</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>9918dba4040c7eacec5f3ba602776ac9</MD5>
+		</Module>
+		<Module name="MysticalLib" id="mysticallib" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/mysticallib-1.15.2-2.0.0.jar</URL>
+			<Size>148464</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>376f25fa0361e4efb4ff99e003624560</MD5>
+			<Meta>
+				<description>Structure spawning utilities, code-based block and item models, and other nice utilities!</description>
+				<version>2.0.0</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/mysticallib</url>
+				<authors>Noobanidus</authors>
+			</Meta>
+		</Module>
+		<Module name="Placebo" id="placebo" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Placebo-1.15.2-3.0.2.jar</URL>
+			<Size>95444</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>b0945f3466e229197cfe9dec8356cde7</MD5>
+			<Meta>
+				<credits></credits>
+				<description>1 library boi</description>
+				<version>1.15.2-3.0.2</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/placebo</url>
+				<authors>Shadows_of_Fire</authors>
+			</Meta>
+		</Module>
+
+		<!-- Performance -->
+		<Module name="AI Improvements" id="ai-improvements" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/AI-Improvements-1.15.2-0.3.0.jar</URL>
+			<Size>22121</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>fb5e0fec348cec3ea07dacdff71b7d78</MD5>
+			<Meta>
+				<description>Simplified AI modification mod focused on performance and low-level modifications to AIs in the game.</description>
+				<version>0.3.0</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/ai-improvements</url>
+				<authors>DarkGuardsman</authors>
+			</Meta>
+		</Module>
+		<Module name="FastFurnace" id="fastfurnace" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/FastFurnace-1.15.1-3.0.0.jar</URL>
+			<Size>15647</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>79f966f54b9f0d82525acc98d50bdbf0</MD5>
+		</Module>
+		<Module name="FastWorkbench" id="fastworkbench" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/FastWorkbench-1.15.1-3.0.0.jar</URL>
+			<Size>28831</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>a89ac0748892165cc29387b0334ce961</MD5>
+		</Module>
+		<Module name="Lithium" id="lithium" depends="mixinbootstrap" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/lithium-mc1.15.2-forge-0.4.6-rc3-mod.jar</URL>
+			<Size>257410</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>90daeda553fed2d7d0fcfe002d183ffb</MD5>
+			<Meta>
+				<description>An optimization mod for Minecraft which improves server performance significantly.</description>
+				<version>0.4.6-rc3</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/lithium-forge</url>
+				<authors>jellysquid</authors>
+			</Meta>
+		</Module>
+		<Module name="Phosphor" id="phosphor" depends="mixinbootstrap" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/phosphor-forge-mc1.15.2-0.5.2+build.4.jar</URL>
+			<Size>45363</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>bc5d52e419292e8ad0d2741006f7d0f5</MD5>
+			<Meta>
+				<description>Performance improvements for Minecraft's lighting engine.</description>
+				<version>0.5.2+build.4</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/phosphor-forge</url>
+				<authors>jellysquid</authors>
+			</Meta>
+		</Module>
+
+		<!-- Utility Mods -->
+		<Module name="AttributeFix" id="attributefix" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/AttributeFix-1.15.2-7.0.2.jar</URL>
+			<Size>7708</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>4f8f344d1c08ab80c47721061ca4cc99</MD5>
+		</Module>
+		<Module name="AppleSkin" id="appleskin" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/AppleSkin-mc1.15.2-forge-1.0.13.jar</URL>
+			<Size>27324</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>9caaf842ae2dcdea6af45bbb74bf5eb9</MD5>
+		</Module>
+		<Module name="Better Advancements" id="betteradvancements" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/BetterAdvancements-1.15.2-0.1.0.96.jar</URL>
+			<Size>61717</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>e1b1ef444aeb9257ee113b584e142ffc</MD5>
+		</Module>
+		<Module name="Cosmetic Armor" id="cosmeticarmorreworked" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/CosmeticArmorReworked-1.15.2-v2.jar</URL>
+			<Size>76547</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>8c4435b2f3b5e16da04793513030f7ee</MD5>
+		</Module>
+		<Module name="Default Options" id="defaultoptions" depends="" side="CLIENT">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/DefaultOptions_1.15.2-11.0.1.jar</URL>
+			<Size>14518</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>6e11a181f961d1a30db766aa2cc684fd</MD5>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/config/defaultoptions/keybindings.txt</URL>
+				<Path>config/defaultoptions/keybindings.txt</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>dd54a0260ee41df31c39a0b76d5ea73e</MD5>
+			</ConfigFile>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/config/defaultoptions/options.txt</URL>
+				<Path>config/defaultoptions/options.txt</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>8766884fca0e124f4a93badceb877bbf</MD5>
+			</ConfigFile>
+		</Module>
+		<Module name="Ding" id="ding" depends="" side="CLIENT">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Ding-1.15.2-1.1.0.jar</URL>
+			<Size>8126</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>a8a28ee72823a91ca0bb6b6472ffe622</MD5>
+			<Meta>
+				<description>
+				Plays a configurable sound when Minecraft loads and reaches the Main Menu.
+				</description>
+				<version>1.1.0</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/ding</url>
+				<authors>ohaiiChun</authors>
+			</Meta>
+		</Module>
+		<Module name="HWYLA" id="hwylaforge" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Hwyla-forge-1.10.8-B72_1.15.2.jar</URL>
+			<Size>174787</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>637faaca8787a2de370be1b5dea4de54</MD5>
+			<Meta>
+				<description>
+				Here's what you're looking at.
+				</description>
+				<version>forge-1.10.8-B72_1.15.2</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/hwyla</url>
+				<authors>TehNut</authors>
+			</Meta>
+		</Module>
+		<Module name="Just Enough Items" id="jei" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/jei-1.15.2-6.0.0.3.jar</URL>
+			<Size>700494</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>660655ae1faa1c16a0a97a7eb9dbdf10</MD5>
+			<Meta>
+				<description>
+				JEI is an item and recipe viewing mod for Minecraft, built from the ground up for stability and performance.
+				</description>
+				<version>6.0.0.3</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/jei</url>
+				<authors>mezz</authors>
+			</Meta>
+		</Module>
+			<Module name="NetherPortalFix" id="netherportalfix" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/NetherPortalFix_1.15.2-6.0.2.jar</URL>
+			<Size>109134</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>45de04e0b9636796ced5e6476e890ff5</MD5>
+			<Meta>
+				<description>Ensures correct destinations when travelling back and forth through Nether Portals in Multiplayer.</description>
+				<version>6.0.2</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/netherportalfix</url>
+				<authors>BlayTheNinth</authors>
+			</Meta>
+		</Module>
+		<Module name="RandomPatches" id="randompatches" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/randompatches-1.15.2-1.21.1.2.jar</URL>
+			<Size>203658</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>c6caab6159551c5b92c30a01b06593f2</MD5>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/config/randompatches.toml</URL>
+				<Path>config/randompatches.toml</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>3a639eef04871a5f981a9a9beef9f76b</MD5>
+			</ConfigFile>
+		</Module>
+		<Module name="Toast Control" id="toastcontrol" depends="placebo" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/ToastControl-1.15.2-3.0.1.jar</URL>
+			<Size>22827</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>c65ca31d0ea636c7021d278fbb508ddf</MD5>
+			<Meta>
+				<credits></credits>
+				<description>Control what toasts are enabled, because some of them are useless.</description>
+				<version>1.15.2-3.0.1</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/toast-control</url>
+				<authors>Shadows_of_Fire</authors>
+			</Meta>
+		</Module>
+
+		<!-- Content Mods -->
+		<Module name="Akashic Tome" id="akashictome" depends="autoreglib" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/AkashicTome-1.3-13.jar</URL>
+			<Size>39737</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>371a9753e92c67d389e6c96ec5ca1a2b</MD5>
+			<Meta>
+				<description>A book of books.</description>
+				<version>1.3-13</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/akashic-tome</url>
+				<authors>Vazkii</authors>
+			</Meta>
+		</Module>
+		<Module name="Atmospheric" id="atmospheric" depends="abnormalscore" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Atmospheric-1.15.2-v1.3.0.jar</URL>
+			<Size>899890</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>690ecf76e8d6ab761464d61bb9be392a</MD5>
+		</Module>
+		<Module name="Autumnity" id="autumnity" depends="abnormalscore" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/autumnity-1.3.1-1.15.2.jar</URL>
+			<Size>356118</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>9241ddb6894889639ad52dda6d167caa</MD5>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/config/autumnity-common.toml</URL>
+				<Path>config/autumnity-common.toml</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>f65b94d71078f9f4d0d1f2452e4c62c1</MD5>
+			</ConfigFile>
+		</Module>
+		<Module name="Better Caves" id="bettercaves" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/BetterCaves-1.15.2-1.0.jar</URL>
+			<Size>470503</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>47331a20810cd5aafdafee62c2cbc290</MD5>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/config/bettercaves-1_15_2.toml</URL>
+				<Path>config/bettercaves-1_15_2.toml</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>72f2a3b932788a8ba265865233652688</MD5>
+			</ConfigFile>
+		</Module>
+		<Module name="Better Drowning" id="betterdrowning" depends="bookshelf" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/BetterDrowning-1.15.2-1.0.3.jar</URL>
+			<Size>9427</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>031e4da6c59ca24823ef6d488a96c886</MD5>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/config/betterdrowning-common.toml</URL>
+				<Path>config/betterdrowning-common.toml</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>508f5bf43842d874f41809d24c140f9a</MD5>
+			</ConfigFile>
+		</Module>
+		<Module name="Biomes O' Plenty" id="biomesoplenty" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/BiomesOPlenty-1.15.2-10.0.0.363-universal.jar</URL>
+			<Size>3232472</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>2ca8538bda257dcf57b1f6d1713c90eb</MD5>
+		</Module>
+		<Module name="Bloomful" id="bloomful" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Bloomful-1.15.2-v1.4.0.jar</URL>
+			<Size>359883</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>b5191628456daff5f34f14439a8ff533</MD5>
+		</Module>
+		<Module name="Buzzier Bees" id="buzzierbees" depends="abnormalscore" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Buzzier-Bees-1.15.2-v1.5.0.jar</URL>
+			<Size>1161395</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>5048c6a2ad39ecf6a33d4646570a3474</MD5>
+		</Module>
+		<Module name="Charm" id="charm" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Charm-1.15.2-1.5.7.jar</URL>
+			<Size>3230596</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>26f35b6f9eb5057c689bb586dd022e04</MD5>
+			<Meta>
+				<description>
+				A mod designed to enhance the vanilla game experience without compromising its gameplay style.
+				</description>
+				<version>1.5.6</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/charm</url>
+				<authors>svenhjol</authors>
+			</Meta>
+		</Module>
+		<Module name="Comforts" id="comforts" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/comforts-FORGE-1.15.2-2.0.0.2.jar</URL>
+			<Size>236095</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>92cd50c3be807c288b0b75328ff7476a</MD5>
+		</Module>
+		<Module name="Curious Elytra" id="curiouselytra" depends="curios caelus" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/curiouselytra-FORGE-1.15.2-2.0.jar</URL>
+			<Size>26924</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>4aa0ea199bb823e188e5c1fd87ed62f6</MD5>
+		</Module>
+		<Module name="Curio of Undying" id="curioofundying" depends="curios" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/curioofundying-FORGE-1.15.2-3.0.jar</URL>
+			<Size>26321</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>d0967654ef4387f60989b2eec5379bd9</MD5>
+		</Module>
+	    <Module name="Dark Utilities" id="darkutilities" depends="bookshelf" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/DarkUtilities-1.15.2-3.0.5.jar</URL>
+			<Size>226189</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>d4a6849851dbdf19c12477a1d4a5dd49</MD5>
+			<Meta>
+				<description>
+				Expansive content mod which adds a little bit of everything.
+				</description>
+				<version>3.0.5</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/dark-utilities</url>
+				<authors>Darkhax</authors>
+			</Meta>
+		</Module>
+		<Module name="Dude! Where's my Horse?" id="dwmh" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/dwmh-1.15.2-4.0.0.jar</URL>
+			<Size>457642</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>d245ed284228795a2e6d014625a9f262</MD5>
+		</Module>
+		<Module name="Glassential" id="glassential" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/glassential-forge-1.15.2-1.1.2.jar</URL>
+			<Size>35946</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>1903ee03ad093a5b6d56cef317df24bf</MD5>
+			<Meta>
+				<credits>Extra Utilities 2 for the inspiration, MayusYT for the name, Wouter for the awesome logo.</credits>
+				<description>Various glasses for all your decorative needs.</description>
+				<version>1.15.2-1.1.2</version>
+				<url></url>
+				<authors>Lykrast</authors>
+			</Meta>
+		</Module>
+		<Module name="The Endergetic Expansion" id="endergeticexpansion" depends="abnormalscore" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/The-Endergetic-Expansion-1.15.2-v1.3.1.jar</URL>
+			<Size>7108963</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>496eb68c32cfec4eed4f3cd1072b2a6d</MD5>
+		</Module>
+		<Module name="Ensorcellation" id="ensorcellation" depends="cofhcore" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/ensorcellation-1.15.2-0.4.1b.jar</URL>
+			<Size>118444</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>93b47d6ff8a3a450db189e7d4759aea3</MD5>
+			<Meta>
+				<description>
+				Adds a bunch of new Enchantments, appropriate for both vanilla and modded gameplay. 
+				Also provides improved versions of lots of vanilla enchantments as well.
+				</description>
+				<version>0.4.0b</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/ensorcellation</url>
+				<authors>Team CoFH</authors>
+			</Meta>
+		</Module>
+		<Module name="Morph-o-Tool" id="morphotool" depends="autoreglib" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Morph-o-Tool-1.3-23.jar</URL>
+			<Size>32384</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>ec27d174fa33ed26f13caf26a4d412f0</MD5>
+		</Module>
+		<Module name="Quark" id="quark" depends="autoreglib" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Quark-r2.1-236.jar</URL>
+			<Size>5380637</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>c344942e8834f096d5b2420815eb335a</MD5>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/config/quark-common.toml</URL>
+				<Path>config/quark-common.toml</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>972df09a36febfbac8391864c2955af5</MD5>
+			</ConfigFile>
+			<Meta>
+				<description>
+				Quark is a fully modular mod with the objective of improving the vanilla gameplay experience.
+				</description>
+				<version>r2.1-236</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/quark</url>
+				<authors>Vazkii</authors>
+			</Meta>
+		</Module>
+		<Module name="Swamp Expansion" id="swampexpansion" depends="abnormalscore" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Swamp-Expansion-1.15.2-v1.7.1.jar</URL>
+			<Size>1670948</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>66df5946c47561a0a27471e62a808f13</MD5>
+		</Module>
+		<Module name="Tinker's Mechworks" id="tmechworks" depends="mantle" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/TMechworks-1.15.2-2.1.0.jar</URL>
+			<Size>276526</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>040fef7da39f633d7de88ef1ee09cca5</MD5>
+			<Meta>
+				<description>
+				Tinkers' Mechworks is a mod that adds various redstone machines.
+				</description>
+				<version>2.1.0</version>
+				<url>https://www.curseforge.com/minecraft/mc-mods/tinkers-mechworks</url>
+				<authors>mDiyo</authors>
+			</Meta>
+		</Module>
+		<Module name="Waystones" id="waystones" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Waystones_1.15.2-6.0.1.jar</URL>
+			<Size>193632</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>880c73d3aac3c5f4c12bf8ef838f60de</MD5>
+		</Module>
+		<Module name="Quick Leaf Decay" id="quickleafdecay" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/QuickLeafDecay-MC1.15.2-1.2.5.jar</URL>
+			<Size>8864</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>3dfce7d3046ff3e44c9ca8dbc2d7a947</MD5>
+			<ConfigFile>
+				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/config/quickleafdecay-common.toml</URL>
+				<Path>config/quickleafdecay-common.toml</Path>
+				<NoOverwrite>false</NoOverwrite>
+				<MD5>5b70728b9126774e9d68381a704423e8</MD5>
+			</ConfigFile>
+		</Module>
+     </Server>
+</ServerPack>
