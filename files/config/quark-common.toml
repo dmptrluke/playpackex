@@ -46,7 +46,7 @@
 	Gravisand = true
 	"Metal Buttons" = true
 	"Obsidian Plate" = true
-	"Pistons Move Tile Entities" = true
+	"Pistons Move Tile Entities" = false
 	"Feeding Trough" = true
 
 	[automation.dispensers_place_blocks]
@@ -107,7 +107,7 @@
 	"More Stone Variants" = true
 	"Framed Glass" = true
 	"Fairy Rings" = true
-	"Tallow And Candles" = true
+	"Tallow And Candles" = false
 	Turf = true
 	"Paper Decor" = true
 	Rope = true
@@ -1097,7 +1097,7 @@
 		#Switch the armor display to the off hand side and the hand display to the main hand side
 		Invert = false
 		"Shift Right" = 0
-		"Enable Armor" = true
+		"Enable Armor" = false
 		"Enable Off Hand" = true
 		"Shift Left" = 0
 		"Enable Main Hand" = true
