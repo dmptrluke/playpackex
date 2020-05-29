@@ -227,6 +227,13 @@
 			<ModType>Regular</ModType>
 			<MD5>8c4435b2f3b5e16da04793513030f7ee</MD5>
 		</Module>
+		<Module name="CraftingTweaks" id="craftingtweaks" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/CraftingTweaks_1.15.1-11.0.0.jar</URL>
+			<Size>99750</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>5cefd7242589ac7175b5a5c5a8f3d478</MD5>
+		</Module>
 		<Module name="Default Options" id="defaultoptions" depends="" side="CLIENT">
 			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/DefaultOptions_1.15.2-11.0.1.jar</URL>
 			<Size>14518</Size>
@@ -435,6 +442,27 @@
 			<ModType>Regular</ModType>
 			<MD5>92cd50c3be807c288b0b75328ff7476a</MD5>
 		</Module>
+		<Module name="Cooking for Blockheads" id="cookingforblockheads" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/CookingForBlockheads_1.15.2-8.0.2.jar</URL>
+			<Size>655866</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>e930ec7cb143c280b3fde6eb769badb1</MD5>
+			<Meta>
+				<credits>BlayTheNinth</credits>
+				<description>Adds a cooking book and multiblock kitchens that only shows recipes you can make with what you currently have in your inventory.</description>
+				<version>${version}</version>
+				<url></url>
+				<authors>BlayTheNinth</authors>
+			</Meta>
+		</Module>
+		<Module name="CraftingCraft" id="craftingcraft" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/CraftingCraft_1.15.2-8.0.1.jar</URL>
+			<Size>46641</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>34e821da1052b4f3c210e1a7dfe9cb6b</MD5>
+		</Module>
 		<Module name="Curious Elytra" id="curiouselytra" depends="curios caelus" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/curiouselytra-FORGE-1.15.2-2.0.jar</URL>
 			<Size>26924</Size>
@@ -472,11 +500,11 @@
 			<MD5>d245ed284228795a2e6d014625a9f262</MD5>
 		</Module>
 		<Module name="Fruit Trees" id="fruittrees" depends="kiwi mixinbootstrap" side="BOTH">
-			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/FruitTrees-1.15.2-1.4.0.jar</URL>
-			<Size>421236</Size>
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/FruitTrees-1.15.2-1.4.1.jar</URL>
+			<Size>421239</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
-			<MD5>93ed71d8d27f9b276bb329e2103f82ca</MD5>
+			<MD5>f41d4db636e3ceff97ff4e60cc4cebbf</MD5>
 		</Module>
 		<Module name="Glassential" id="glassential" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/glassential-forge-1.15.2-1.1.2.jar</URL>
@@ -523,11 +551,11 @@
 			<MD5>ec27d174fa33ed26f13caf26a4d412f0</MD5>
 		</Module>
 		<Module name="Quark" id="quark" depends="autoreglib" side="BOTH">
-			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Quark-r2.1-236.jar</URL>
-			<Size>5380637</Size>
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Quark-r2.1-238.jar</URL>
+			<Size>5404286</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
-			<MD5>c344942e8834f096d5b2420815eb335a</MD5>
+			<MD5>32b51007379d5f6c659b3653fa6b2e29</MD5>
 			<ConfigFile>
 				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/config/quark-common.toml</URL>
 				<Path>config/quark-common.toml</Path>
