@@ -361,17 +361,24 @@
 			<MD5>f0a359c864b2ea83bfdb492622a5df9d</MD5>
 		</Module>
 		<Module name="Autumnity" id="autumnity" depends="abnormalscore" side="BOTH">
-			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/autumnity-1.3.1-1.15.2.jar</URL>
-			<Size>356118</Size>
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/autumnity-1.3.2-1.15.2.jar</URL>
+			<Size>357571</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
-			<MD5>9241ddb6894889639ad52dda6d167caa</MD5>
+			<MD5>b8c34bbeef1810a366da398bdb8d4c9b</MD5>
 			<ConfigFile>
 				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/config/autumnity-common.toml</URL>
 				<Path>config/autumnity-common.toml</Path>
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>f65b94d71078f9f4d0d1f2452e4c62c1</MD5>
 			</ConfigFile>
+		</Module>
+		<Module name="Berry Good" id="berrygood" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/berry_good-2.0.0.jar</URL>
+			<Size>27302</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>642c20050c67b897f2bc6660fde2d0b0</MD5>
 		</Module>
 		<Module name="Better Caves" id="bettercaves" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/BetterCaves-1.15.2-1.0.jar</URL>
@@ -385,6 +392,13 @@
 				<NoOverwrite>false</NoOverwrite>
 				<MD5>72f2a3b932788a8ba265865233652688</MD5>
 			</ConfigFile>
+		</Module>
+		<Module name="Better Mineshafts" id="bettermineshafts" depends="" side="BOTH">
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/BetterMineshaftsForge-1.15.2-1.0.1.jar</URL>
+			<Size>277200</Size>
+			<Required>true</Required>
+			<ModType>Regular</ModType>
+			<MD5>76b11c4064b189a54d76cd927fcb2139</MD5>
 		</Module>
 		<Module name="Better Drowning" id="betterdrowning" depends="bookshelf" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/BetterDrowning-1.15.2-1.0.3.jar</URL>
@@ -428,19 +442,25 @@
 			<MD5>1c8a60964f2a321fb3815083274a5f7e</MD5>
 		</Module>
 		<Module name="Charm" id="charm" depends="" side="BOTH">
-			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Charm-1.15.2-1.5.7.jar</URL>
-			<Size>3230596</Size>
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Charm-1.15.2-1.5.9.jar</URL>
+			<Size>1397465</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
-			<MD5>26f35b6f9eb5057c689bb586dd022e04</MD5>
+			<MD5>ccc81f09ebc286bc9b01916aac630ce6</MD5>
 			<Meta>
 				<description>
 				A mod designed to enhance the vanilla game experience without compromising its gameplay style.
 				</description>
-				<version>1.5.6</version>
+				<version>1.5.9</version>
 				<url>https://www.curseforge.com/minecraft/mc-mods/charm</url>
 				<authors>svenhjol</authors>
 			</Meta>
+			<Submodule name="Covalent" id="covalent" depends="" side="BOTH">
+				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Covalent-1.15.2-1.0.2.jar</URL>
+				<Size>214133</Size>
+				<ModType>Regular</ModType>
+				<MD5>e7acbb89961eb2aa83de72608b82b4da</MD5>
+			</Submodule>
 		</Module>
 		<Module name="Comforts" id="comforts" depends="" side="BOTH">
 			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/comforts-FORGE-1.15.2-2.0.0.2.jar</URL>
@@ -558,11 +578,11 @@
 			<MD5>ec27d174fa33ed26f13caf26a4d412f0</MD5>
 		</Module>
 		<Module name="Quark" id="quark" depends="autoreglib" side="BOTH">
-			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Quark-r2.1-239.jar</URL>
-			<Size>5420084</Size>
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/Quark-r2.1-244.jar</URL>
+			<Size>5424898</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
-			<MD5>1383a0b1d71ed891977997c3911cc0dc</MD5>
+			<MD5>39cdedebd2762df6ec6c8643724f5ef0</MD5>
 			<ConfigFile>
 				<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/config/quark-common.toml</URL>
 				<Path>config/quark-common.toml</Path>
@@ -593,16 +613,16 @@
 			<MD5>66df5946c47561a0a27471e62a808f13</MD5>
 		</Module>
 		<Module name="Tinker's Mechworks" id="tmechworks" depends="mantle" side="BOTH">
-			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/TMechworks-1.15.2-2.1.0.jar</URL>
-			<Size>276526</Size>
+			<URL priority="0">https://launcher.dmptr.com/playpack_ex/files/mods/TMechworks-1.15.2-2.1.1.jar</URL>
+			<Size>279704</Size>
 			<Required>true</Required>
 			<ModType>Regular</ModType>
-			<MD5>040fef7da39f633d7de88ef1ee09cca5</MD5>
+			<MD5>6b8c9f72a6b7034c7b60b4d5de8d11fc</MD5>
 			<Meta>
 				<description>
 				Tinkers' Mechworks is a mod that adds various redstone machines.
 				</description>
-				<version>2.1.0</version>
+				<version>2.1.1</version>
 				<url>https://www.curseforge.com/minecraft/mc-mods/tinkers-mechworks</url>
 				<authors>mDiyo</authors>
 			</Meta>
